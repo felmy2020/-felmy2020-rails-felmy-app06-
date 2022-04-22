@@ -31,6 +31,8 @@ services:
       - '8080:8080'
     tty: true
     stdin_open: true
+    environment:
+      CHOKIDAR_USEPOLLING: ture
     command: npm run serve
 
 volumes:
