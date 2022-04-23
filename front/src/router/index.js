@@ -44,6 +44,7 @@ const noRequireAuth = async (to, from, next) => {
   } else {
     next()
   }
+  next()
 }
 
 const routes = [
